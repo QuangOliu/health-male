@@ -1,0 +1,28 @@
+.health {
+	padding: 8.7em 0 42px;
+
+	&__wrap {
+		display: flex;
+		flex-flow: row wrap;
+		justify-content: space-between;
+	}
+
+	&__story {
+		background-color: $green-brg;
+		@include column(4);
+        overflow: hidden;
+	}
+
+	&__contents {
+		padding: 22px 15px;
+		h3 {
+			font-size: 17px;
+			color: $white;
+			text-transform: uppercase;
+		}
+		p {
+			margin-top: 15px;
+			color: $white;
+		}
+	}
+}

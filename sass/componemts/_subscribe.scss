@@ -1,0 +1,61 @@
+.subsc {
+    padding: 70px 0;
+    background-color: $blue--white;
+    &__wrap {
+        text-align: center;
+    }
+    &__content {
+        margin: 0 25%;
+        padding:0 0 30px;
+        color: $green;
+    }
+}
+
+.form {
+    font-size: 14px;
+    display: flex;
+    text-align: start;
+    justify-content: center;
+
+    &__ob:after {
+        content: '*';
+        color: red;
+        margin-left: -2px;
+
+    }
+
+    &__left {
+        margin-right: 25px;
+    }
+
+    &__select {
+        height: 40px;
+        margin: 0;
+    }
+
+    &__selection {
+        margin: 20px 0;
+    }
+
+    &__checkbox {
+        width: 20px;
+        height: 20px;
+        line-height: 0;
+        margin: 0;
+    }
+
+    &__right {
+        text-align: start;
+        margin-left: 25px;
+    }
+
+    &__iterm {
+        display: block;
+        text-align: start;
+        margin-bottom: 30px;
+    }
+
+    &__nomal {
+        margin-top: 4px;
+    }
+}

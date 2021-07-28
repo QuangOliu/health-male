@@ -1,0 +1,21 @@
+input, select {
+  border: none;
+  height: 40px;
+  padding-left: 15px;
+}
+
+input.header__search {
+    width: 260px;
+}
+
+input.form__nomal, select {
+    width: 330px;
+}
+
+input[type="number"] {
+    margin-right: 8px;
+    width: 120px;
+    height: 40px;
+}
+
+

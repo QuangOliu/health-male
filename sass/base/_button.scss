@@ -1,0 +1,27 @@
+button {
+  border: none;
+  background-color: $orig-bgr;
+  margin-left: -2px;
+  height: 40px;
+  width: 50px;
+}
+
+.button {
+  display: inline-block;
+  border: none;
+  background-color: $orig-bgr;
+  padding: 14px;
+  margin-bottom: 20px;
+  font-size: 0.7rem;
+  &--while {
+    background-color: $white;
+    color: $orig-bgr;
+    margin-right: 10px;
+  }
+
+  &--green {
+    margin: 20px 0 0 0 ;
+    color: $white;
+    background-color: $green
+  }
+}

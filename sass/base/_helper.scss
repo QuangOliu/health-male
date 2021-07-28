@@ -1,0 +1,23 @@
+.container {
+    margin: 0 auto;
+    max-width: $container-width;
+}
+
+.logo {
+    line-height: 0;
+    padding-top: 9px;
+}
+
+.btn {
+    margin-top: 30px;
+    text-align: center;
+    position: relative;
+}
+
+.underline {
+    text-decoration: underline;
+}
+
+.block__tt {
+    display: block;
+}

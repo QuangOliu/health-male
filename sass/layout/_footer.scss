@@ -1,0 +1,128 @@
+footer {
+    font-size: 14px;
+}
+
+.footer {
+    color: $green;
+    a {
+        color: $green;
+        text-decoration: underline;
+    }
+
+    &__top {
+        padding: 50px 0 30px;
+        background-color: $white--gray;
+        li {
+            margin-bottom: 15px;
+        }
+    }
+
+    &__first {
+        display: flex;
+        justify-content: space-between;
+        border-bottom: $green solid 2px;
+    }
+
+    &__social {
+        a {
+            display: block;
+        }
+        flex: 0 0 auto;
+    }
+
+    &__link {
+        width: 36px;
+        height: 36px;
+        background: $blue--white;
+        border-radius: 50%;
+        overflow: hidden;
+        text-indent: -999px;
+        margin-bottom: 10px;
+    }
+
+    &__link :hover {
+        background: $orig-bgr;
+    }
+
+    &__cell {
+        flex: 1 1 0px;
+    }
+
+    &__second {
+        padding: 15px 0;
+        border-bottom: $green solid 2px;
+        text-align: center;
+    }
+
+    &__finally {
+        padding: 15px 0;
+        text-align: center;
+        a{
+            margin-right: 15px;
+            &:last-child{
+                margin-left: 0;
+            }
+        }
+        img {
+            height: 50px;
+        }
+
+    }
+
+    &__bottom {
+        background-color: $white;
+        padding: 20px 0;
+    }
+
+    &__wrap {
+        display: flex;
+    }
+    &__right  {
+        width: 33.33%;
+        ul {
+            display: flex;
+        }
+        li {
+            margin-right: 20px;
+        }
+        
+    }
+
+    &__end:after {
+        content: '/';
+        color: $green;
+        margin-left: 4px;
+        font-size: 17px;
+    }
+
+    &__left {
+        width: 33.33%;
+    }
+}
+
+
+
+.fb {
+    background: $blue--white url('/images/model/facebook.svg') no-repeat 50% 50%;
+    background-size: 10px;
+}
+.tw{
+    
+    background: $blue--white url('/images/model/twitter.svg') no-repeat 50% 50%;
+    background-size: 16px;
+}
+.yt{
+
+    background: $blue--white url('/images/model/youtube.svg') no-repeat 50% 50%;
+    background-size: 16px;
+}
+.ins{
+
+    background: $blue--white url('/images/model/instagram.svg') no-repeat 50% 50%;
+    background-size: 16px;
+}
+.in {
+
+    background: $blue--white url('/images/model/linkedin.svg') no-repeat 50% 50%;
+    background-size: 16px;
+}
