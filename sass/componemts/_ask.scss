@@ -31,4 +31,21 @@
     &__time {
         color: $orig-bgr;
     }
+
+    &__mobile {
+        display: none;
+    }
+
+    @media screen and (max-width:768px) {
+        &{
+            padding-bottom: 10px;
+        }
+        &__mobile {
+            display: block;
+            width: 100%;
+        }
+        &__list {
+            display: none;
+        }
+    }
 }

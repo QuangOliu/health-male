@@ -1,5 +1,5 @@
 @mixin column ($column:4) {
-    margin-right: 30px ;
+    // margin-right: 30px ;
     margin-bottom: 30px;  
     $variable: calc( 100% - (#{$column}-1)*30px);
     width:calc( #{$variable} / #{$column} );

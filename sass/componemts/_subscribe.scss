@@ -26,6 +26,7 @@
 
     &__left {
         margin-right: 25px;
+        order: 1;
     }
 
     &__select {
@@ -47,6 +48,7 @@
     &__right {
         text-align: start;
         margin-left: 25px;
+        order: 2;
     }
 
     &__iterm {
@@ -57,5 +59,28 @@
 
     &__nomal {
         margin-top: 4px;
+    }
+
+    @media screen and (max-width:768px) {
+
+        &{
+            display: block;
+        }
+        
+        &__desktop {
+            display: none;
+        }
+
+        &__left {
+            
+        }
+        &__right {
+            margin: 0;
+        }
+
+        &__wrap {
+            display: flex;
+            justify-content: space-between;
+        }
     }
 }
