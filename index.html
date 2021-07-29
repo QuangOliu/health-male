@@ -10,10 +10,17 @@
         <link
             href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;300;500&display=swap"
             rel="stylesheet"
-        />
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        /><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
         <title>QUANG</title>
     </head>
+    <script>
+        $(document).ready(function() {
+            $('.header__bars').click(function() {
+                $('.header__menu').slideToggle();
+            });
+        })
+    </script>
     <body>
         <!--BEGIN HEADER-->
         <header class="header">
@@ -22,11 +29,10 @@
                     <div>
                         <img src="./images/Model/Image 1.png" alt="logo" class="logo" />
                     </div>
-
                     <nav class="header__menu">
                         <div class="header__top">
                             <ul class="header__list">
-                                <li><a href="#">baner us</a></li>
+                                <li><a href="#">About us</a></li>
                                 <li><a href="#">Order resources</a></li>
                                 <li><a href="#">Subscribe</a></li>
                                 <li><a href="#">The Male</a></li>
@@ -39,13 +45,16 @@
                             </div>
                         </div>
                         <ul class="header__list header__bottom">
-                            <li><a href="#">Men's healthy</a></li>
-                            <li><a href="#">resources & tools</a></li>
-                            <li><a href="#">for health professionals</a></li>
-                            <li><a href="#">news</a></li>
-                            <li><a href="#">contact us</a></li>
+                            <li><a href="#">Mens health</a></li>
+                            <li><a href="#">Resources & tools</a></li>
+                            <li><a href="#">For health professionals</a></li>
+                            <li><a href="#">News</a></li>
+                            <li><a href="#">Contact us</a></li>
                         </ul>
                     </nav>
+                    <div class="header__bars">
+                        <i class="fas fa-bars"></i>
+                    </div>
                 </div>
             </div>
         </header>
@@ -102,49 +111,60 @@
                             />
                             <div class="health__contents">
                                 <h3>Men's health topics</h3>
-                                <p>
+                                <p class="health__body--desktop">
                                     make informed decisions baner your health with easy~
                                     to-understand information on a range of men's health conditions
                                     conditions.
                                 </p>
-                                <a href="#" class="button">FIND OUT MOUR</a>
+                                <p class="health__body--mobile">
+                                      informed on men's health inssues  informed on men's health inssues
+                                </p>
+                                <a href="#" class="health__btn button">FIND OUT MOUR</a>
                             </div>
                         </div>
                         <div class="health__story">
                             <img src="./images/Model/iStock-1185966868_HPLatest News.png" alt="" />
                             <div class="health__contents">
                                 <h3>Latest news</h3>
-                                <p>
+                                <p class="health__body--desktop">
                                     stay informed on men's health inssues with articles for men and
                                     boys their family and friends, and health professionals
                                     professionals.
                                 </p>
-
-                                <a href="#" class="button">FIND OUT MOUR</a>
+                                <p class="health__body--mobile">
+                                      informed on men's health inssues  informed on men's health inssues
+                                </p>
+                                <a href="#" class="health__btn button">FIND OUT MOUR</a>
                             </div>
                         </div>
                         <div class="health__story">
                             <img src="./images/Model/iStock-1185966868_HPLatest News.png" alt="" />
                             <div class="health__contents">
                                 <h3>Your stoties</h3>
-                                <p>
+                                <p class="health__body--desktop">
                                     real stories from real Aussie men who have lived with, or
                                     currently live with, a health condition, these stories hope,
                                     inspire, and change lives.
                                 </p>
+                                <p class="health__body--mobile">
+                                    informed on men's health inssues  informed on men's health inssues
+                                </p>
 
-                                <a href="#" class="button">FIND OUT MOUR</a>
+                                <a href="#" class="health__btn button">FIND OUT MOUR</a>
                             </div>
                         </div>
                         <div class="health__story">
                             <img src="./images/Model/18c99d44d8fa53efd11548f7b69d3ec5.png" alt="" />
                             <div class="health__contents">
                                 <h3>Resource library</h3>
-                                <p>
+                                <p class="health__body--desktop">
                                     Browse through our resource library and download resources baner
                                     the reproductive and sexual condition that can affrct you.
                                 </p>
-                                <a href="#" class="button">FIND OUT MOUR</a>
+                                <p class="health__body--mobile">
+                                      informed on men's health inssues  informed on men's health inssues
+                                </p>
+                                <a href="#" class="health__btn button">FIND OUT MOUR</a>
                             </div>
                         </div>
                     </div>
@@ -206,7 +226,7 @@
                                 <span class="block__tt">Education and trainning for</span>
                                 <span class="block__tt">health professionals</span>
                             </h2>
-                            <p>
+                            <p class="train__body">
                                 advance your knowledge and skills in male reproductive and sexual
                                 health with our active learning modules (ALMs). Accerdited by
                                 leading heath organisations RACGP, ACRRM and APNA, each ALM offers

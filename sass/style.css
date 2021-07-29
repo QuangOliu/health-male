@@ -8,17 +8,24 @@ p {
   margin-bottom: 10px;
   font-size: 16px;
   line-height: 1.5;
+  font-family: "Campton",sans-serif;
+}
+
+h1 {
+  color: white;
+  font-size: 4rem;
+  line-height: 4.2rem;
 }
 
 h2 {
-  font-size: 45px;
+  font-size: 38px;
   line-height: 1.3;
   margin: 0;
 }
 
 h3 {
   margin-top: 0;
-  margin-bottom: 10px;
+  margin-bottom: 6px;
   font-size: 1.5rem;
   text-transform: uppercase;
 }
@@ -48,6 +55,7 @@ label {
 .container {
   margin: 0 auto;
   max-width: 1180px;
+  padding-left: 20px;
 }
 
 .logo {
@@ -59,6 +67,18 @@ label {
   margin-top: 30px;
   text-align: center;
   position: relative;
+}
+
+.btn::after {
+  content: '';
+  display: block;
+  width: 100%;
+  border: 1px solid #f15f4e;
+  background-color: #f15f4e;
+  position: absolute;
+  top: 34%;
+  left: 0;
+  z-index: -1;
 }
 
 .underline {
@@ -75,15 +95,27 @@ button {
   margin-left: -2px;
   height: 40px;
   width: 50px;
+  cursor: pointer;
+}
+
+button:active {
+  background-color: #ec2a13;
 }
 
 .button {
   display: inline-block;
   border: none;
+  font-size: 16px;
   background-color: #f15f4e;
   padding: 14px;
   margin-bottom: 20px;
   font-size: 0.7rem;
+}
+
+.button:hover {
+  background-color: #ec2a13;
+  -webkit-transition: .5s;
+  transition: .5s;
 }
 
 .button--while {
@@ -92,10 +124,18 @@ button {
   margin-right: 10px;
 }
 
+.button--while:hover {
+  background-color: #e6e6e6;
+}
+
 .button--green {
   margin: 20px 0 0 0;
   color: white;
   background-color: #0e5a61;
+}
+
+.button--green:hover {
+  background-color: #053744;
 }
 
 input, select {
@@ -132,18 +172,12 @@ input[type="number"] {
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
   position: absolute;
-  top: calc(50% - 6.1em);
+  top: calc(50% - 8%);
   left: calc((100% - 1180px) / 2);
 }
 
-.baner__title {
-  color: white;
-  font-size: 4.4rem;
-  line-height: 0.9;
-}
-
 .baner__body {
-  margin: 15px 0 40px;
+  margin: 15px 0 15px;
   color: white;
   font-size: 1rem;
 }
@@ -165,7 +199,7 @@ input[type="number"] {
 }
 
 .baner__flex {
-  padding: 2.6em 0 16px;
+  padding: 29px 0 16px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -177,8 +211,14 @@ input[type="number"] {
           align-items: center;
 }
 
+@media screen and (max-width: 768px) {
+  .baner__img {
+    display: block;
+  }
+}
+
 .health {
-  padding: 8.7em 0 42px;
+  padding: 8.7em 0 40px;
 }
 
 .health__wrap {
@@ -207,11 +247,11 @@ input[type="number"] {
 }
 
 .health__contents {
-  padding: 22px 15px;
+  padding: 19px 15px;
 }
 
 .health__contents h3 {
-  font-size: 17px;
+  font-size: 19px;
   color: white;
   text-transform: uppercase;
 }
@@ -221,8 +261,40 @@ input[type="number"] {
   color: white;
 }
 
+.health__body--mobile {
+  display: none;
+}
+
+@media screen and (max-width: 768px) {
+  .health {
+    padding: 30px 0;
+  }
+  .health__wrap {
+    display: block;
+  }
+  .health__story {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%;
+  }
+  .health__contents {
+    position: relative;
+  }
+  .health__body--desktop {
+    display: none;
+  }
+  .health__body--mobile {
+    display: block;
+  }
+  .health__btn {
+    position: absolute;
+    top: 77%;
+  }
+}
+
 .view {
-  margin-bottom: 30px;
+  margin-bottom: 57px;
 }
 
 .view h2 {
@@ -236,7 +308,7 @@ input[type="number"] {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  margin: 30px 0;
+  margin: 19px 0 45px;
 }
 
 .view__left {
@@ -249,7 +321,8 @@ input[type="number"] {
 
 .view__img {
   display: inline-block;
-  width: 97%;
+  width: 96%;
+  height: 99%;
 }
 
 .view__play {
@@ -273,10 +346,23 @@ input[type="number"] {
 
 .view__bonus {
   position: relative;
+  margin-bottom: 22px;
 }
 
 .view__sub {
   width: 100%;
+}
+
+@media screen and (max-width: 768px) {
+  .view__left {
+    width: 100%;
+  }
+  .view__img {
+    width: 100%;
+  }
+  .view__right {
+    display: none;
+  }
 }
 
 .train {
@@ -288,18 +374,31 @@ input[type="number"] {
 .train__global {
   height: 20rem;
   position: relative;
-  padding: 50px 0;
+  padding: 30px 0;
 }
 
 .train__contents {
-  margin-left: 15%;
-  margin-right: 15%;
+  margin: 0 25%;
   color: white;
   text-align: center;
   position: absolute;
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
   top: 50%;
+}
+
+.train__body {
+  margin: 8px 0 20px;
+}
+
+@media screen and (max-width: 768px) {
+  .train {
+    background-image: url("/images/model/download.png");
+    width: 100%;
+  }
+  .train__contents {
+    margin: 0;
+  }
 }
 
 .ask {
@@ -426,7 +525,6 @@ input[type="number"] {
 }
 
 .header {
-  text-transform: capitalize;
   background-color: #0e5a61;
 }
 
@@ -450,14 +548,11 @@ input[type="number"] {
 }
 
 .header__top a {
-  font-size: 15px;
+  font-size: 13px;
 }
 
-.header__box-search {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  margin-left: 30px;
+.header__top li:not(:last-child) {
+  margin: 0 27px 0 0;
 }
 
 .header__list {
@@ -472,21 +567,71 @@ input[type="number"] {
           align-items: center;
 }
 
-.header__list li:not(:last-child) {
-  margin: 0 10px;
+.header__list a {
+  padding: 5px 10px;
+}
+
+.header__list li :hover {
+  background-color: #053744;
+  border-radius: 5px;
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
+.header__box-search {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-left: 30px;
 }
 
 .header__bottom {
   padding-top: 14px;
 }
 
+.header__bottom li:not(:last-child) {
+  margin-right: 33px;
+}
+
 .header__bottom a {
-  font-size: 17px;
+  font-size: 18px;
+}
+
+.header__bars {
+  display: none;
+  text-align: right;
+  font-size: 40px;
+  color: #f15f4e;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 768px) {
+  .header__menu {
+    display: none;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    text-align: center;
+    background-color: #0e5a61;
+    z-index: 999;
+  }
+  .header__list {
+    display: block;
+  }
+  .header__bars {
+    display: block;
+  }
 }
 
 body {
-  letter-spacing: 2px;
+  margin: 0;
+  padding: 0;
+  background: #fefefe;
   font-size: 10px;
+  font-size: 1.1 em;
+  font-weight: 400;
+  color: #0a0a0a;
 }
 
 footer {

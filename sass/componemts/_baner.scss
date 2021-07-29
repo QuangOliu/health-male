@@ -9,18 +9,12 @@
 		max-width: 40rem;
 		transform: translateY(-50%);
 		position: absolute;
-		top: calc(50% - 6.1em);
+		top: calc(50% - 8%);
 		left: calc((100% - #{$container-width}) / 2);
 	}
 
-	&__title {
-		color: white;
-		font-size: 4.4rem;
-		line-height: 0.9;
-	}
-
 	&__body {
-		margin: 15px 0 40px;
+		margin: 15px 0 15px;
 		color: white;
 		font-size: 1rem;
 	}
@@ -40,9 +34,16 @@
 	}
 
 	&__flex {
-		padding: 2.6em 0 16px;
+		padding: 29px 0 16px;
 		display: flex;
 		justify-content: space-between;
 		align-items: center;
+	}
+
+	@media screen and (max-width:768px) {
+		&__img {
+			display: block;
+		}
+		
 	}
 }

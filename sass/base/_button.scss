@@ -4,24 +4,39 @@ button {
   margin-left: -2px;
   height: 40px;
   width: 50px;
+  cursor: pointer;
+  &:active {
+    background-color: $red-hover;
+  }
 }
 
 .button {
   display: inline-block;
   border: none;
+  font-size: 16px;
   background-color: $orig-bgr;
   padding: 14px;
   margin-bottom: 20px;
   font-size: 0.7rem;
+  &:hover {
+    background-color: $red-hover;
+    transition: .5s;
+  }
   &--while {
     background-color: $white;
     color: $orig-bgr;
     margin-right: 10px;
+    &:hover {
+      background-color: $white--gray;
+    }
   }
 
   &--green {
     margin: 20px 0 0 0 ;
     color: $white;
-    background-color: $green
+    background-color: $green;
+    &:hover{
+      background-color: $green-hover;
+    }
   }
 }

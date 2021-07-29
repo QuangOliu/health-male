@@ -1,5 +1,5 @@
 .view {
-	margin-bottom: 30px;
+	margin-bottom: 57px;
 	h2 {
 		color: $green;
 	}
@@ -7,7 +7,7 @@
 	&__wrap {
 		display: flex;
 		justify-content: space-between;
-		margin: 30px 0;
+		margin: 19px 0 45px;
 	}
 
 	&__left {
@@ -18,7 +18,9 @@
 
 	&__img {
 		display: inline-block;
-		width: 97%;
+		width: 96%;
+		height: 99%;
+	
 	}
 
 	&__play {
@@ -36,9 +38,21 @@
 
 	&__bonus {
 		position: relative;
+		margin-bottom: 22px;
 	}
 
 	&__sub {
 		width: 100%;
+	}
+	@media screen and (max-width:768px) {
+		&__left {
+			width: 100%;
+		}
+		&__img {
+			width: 100%;
+		}
+		&__right {
+			display: none;
+		}
 	}
 }
