@@ -377,7 +377,7 @@ input[type="number"] {
 }
 
 .train {
-  background-image: url("/images/model/train.jpg");
+  background-image: url("/health-male/images/model/train.jpg");
   background-position: 50%, 50%;
   background-size: cover;
 }
@@ -404,7 +404,7 @@ input[type="number"] {
 
 @media screen and (max-width: 768px) {
   .train {
-    background-image: url("/images/model/download.png");
+    background-image: url("");
     width: 100%;
   }
   .train__contents {
@@ -815,27 +815,27 @@ footer {
 }
 
 .fb {
-  background: #93d5da url("/images/model/facebook.svg") no-repeat 50% 50%;
+  background: #93d5da url("/health-male/images/model/facebook.svg") no-repeat 50% 50%;
   background-size: 10px;
 }
 
 .tw {
-  background: #93d5da url("/images/model/twitter.svg") no-repeat 50% 50%;
+  background: #93d5da url("/health-male/images/model/twitter.svg") no-repeat 50% 50%;
   background-size: 16px;
 }
 
 .yt {
-  background: #93d5da url("/images/model/youtube.svg") no-repeat 50% 50%;
+  background: #93d5da url("/health-male/images/model/youtube.svg") no-repeat 50% 50%;
   background-size: 16px;
 }
 
 .ins {
-  background: #93d5da url("/images/model/instagram.svg") no-repeat 50% 50%;
+  background: #93d5da url("/health-male/images/model/instagram.svg") no-repeat 50% 50%;
   background-size: 16px;
 }
 
 .in {
-  background: #93d5da url("/images/model/linkedin.svg") no-repeat 50% 50%;
+  background: #93d5da url("/health-male/images/model/linkedin.svg") no-repeat 50% 50%;
   background-size: 16px;
 }
 /*# sourceMappingURL=style.css.map */
