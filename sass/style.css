@@ -56,7 +56,7 @@ h1, h2 {
 h3 {
   margin-top: 0;
   margin-bottom: 7px;
-  font-weight: 900;
+  font-weight: 700;
   text-transform: uppercase;
 }
 
@@ -341,20 +341,27 @@ input[type="number"] {
     display: flex;
     margin-bottom: 30px;
     width: 100%;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
   }
-  .health__contents {
-    position: relative;
+  .health__story p {
+    font-size: 12px;
+    margin: 0;
+  }
+  .health__story h3 {
+    font-size: 15px;
+    font-weight: 500;
+  }
+  .health__text {
+    padding: 0;
   }
   .health__body__desktop {
     display: none;
   }
   .health__body__mobile {
     display: block;
-  }
-  .health__btn {
-    position: absolute;
-    top: 77%;
-    width: calc(100% - 40px);
   }
 }
 
@@ -813,20 +820,24 @@ input[type="number"] {
     text-align: start;
     background-color: #0e5a61;
     z-index: 999;
-    position: absolute;
-    top: 144px;
+    position: fixed;
+    top: 75px;
     left: 0;
+    bottom: 0;
     width: 100%;
     overflow-y: scroll;
   }
   .header__logo {
-    width: 70%;
+    width: 100%;
+  }
+  .header__box-logo {
+    width: 200px;
   }
   .header__list {
     display: block;
   }
   .header__list li {
-    width: calc( 100% -20px);
+    width: calc(100% -20px);
     margin: 0 20px;
     padding-bottom: 15px;
     border-bottom: 1px solid #053744;
@@ -853,6 +864,13 @@ input[type="number"] {
 
 .fa-bars {
   font-size: 30px;
+}
+
+@media screen and (max-width: 768px) {
+  body.is-fixed {
+    overflow: hidden;
+    position: relative;
+  }
 }
 
 body {

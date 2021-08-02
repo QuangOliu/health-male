@@ -28,7 +28,10 @@
     <script>
         $(document).ready(function () {
             $(".header__bars").click(function () {
+                $(this).parents(".header__wrap") 
                 $(".header__menu").slideToggle();
+
+                $(this).parents("body").toggleClass("is-fixed");
             });
         });
     </script>
@@ -130,11 +133,12 @@
                 <div class="container">
                     <div class="health__wrap">
                         <div class="health__story">
-                        
+                                <div class="health__box-img">
                                 <img
-                                    src="./images/model/iStock-1227005375_HPMen's HealthTopics.png"
+                                    src="./images/model/1.png"
                                     alt=""
                                 />
+                            </div>
                             <div class="health__contents">
                                 <div class="health__text">
                                     <h3>Men's health topics</h3>
@@ -156,10 +160,11 @@
                             </div>
                         </div>
                         <div class="health__story">
+                            <div class="health__box-img">
                                 <img
-                                    src="./images/model/iStock-1185966868_HPLatest News.png"
+                                    src="./images/model/2.png"
                                     alt=""
-                                />
+                                /></div>
                             <div class="health__contents">
                                 <div class="health__text">
                                     <h3>Latest news</h3>
@@ -179,10 +184,11 @@
                             </div>
                         </div>
                         <div class="health__story">
+                            <div class="health__box-img">
                                 <img
-                                    src="./images/model/iStock-1185966868_HPLatest News.png"
+                                    src="./images/model/3.png"
                                     alt=""
-                                />
+                                /></div>
                             <div class="health__contents">
                                 <div class="health__text">
                                     <h3>Your stoties</h3>
@@ -202,10 +208,11 @@
                             </div>
                         </div>
                         <div class="health__story">
+                            <div class="health__box-img">
                                 <img
-                                    src="./images/model/18c99d44d8fa53efd11548f7b69d3ec5.png"
+                                    src="./images/model/4.png"
                                     alt=""
-                                />
+                                /></div>
                             <div class="health__contents">
                                 <div class="health__text">
                                     <h3>Resource library</h3>
