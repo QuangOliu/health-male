@@ -1,22 +1,20 @@
 .health {
-	padding: 8.7em 0 40px;
-
-	&__wrap {
-		display: flex;
-		flex-flow: row wrap;
-		justify-content: space-between;
-	}
-
-	&__story {
-		background-color: $green-brg;
-		@include column(4);
-		overflow: hidden;
-		// @include grid(4, 30px);
-	}
-
-	&__contents {
-		padding: 19px 15px;
-		h3 {
+    padding: 70px 0;
+    &__wrap {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    &__story {
+        background-color: $green;
+        @include column;
+        flex-direction: column wrap;
+        img {
+            max-width: 100%;
+        }
+    }
+    &__contents {
+        padding: 20px;
+        h3 {
 			font-size: 19px;
 			color: $white;
 			text-transform: uppercase;
@@ -25,35 +23,47 @@
 			margin-top: 15px;
 			color: $white;
 		}
-	}
+    }
+    &__text {
+        padding-bottom: 25px;
+    }
+    &__body__mobile {
+        display: none;
+    }
 
-	&__body--mobile {
-		display: none;
+    /*
+	&__contents {
+		padding: 19px 15px;
+		
 	}
+    */
 
-	@media screen and (max-width: 768px) {
-		&{
-			padding: 30px 0;
-		}
-		&__wrap {
-			display: block;
-		}
-		&__story {
-			display: flex;
-			width: 100%;
-		}
-		&__contents {
-			position: relative;
-		}
-		&__body--desktop{
-			display: none;
-		}
-		&__body--mobile {
-			display: block;
-		}
-		&__btn {
-			position: absolute;
-			top: 77%;
-		}
-	}
+    @media screen and (max-width: 768px) {
+        & {
+            padding: 30px 0;
+        }
+        &__wrap {
+            display: block;
+        }
+        &__story {
+            display: flex;
+			margin-bottom: 30px;
+            width: 100%;
+        }
+        &__contents {
+            position: relative;
+        }
+        &__body__desktop {
+            display: none;
+        }
+        &__body__mobile {
+            display: block;
+        }
+        &__btn {
+            position: absolute;
+            top: 77%;
+			width:calc(100% - 40px);
+        }
+		
+    }
 }

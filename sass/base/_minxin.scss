@@ -1,7 +1,6 @@
 @mixin column ($column:4) {
-    // margin-right: 30px ;
-    margin-bottom: 30px;  
-    $variable: calc( 100% - (#{$column}-1)*30px);
+    margin-right: 30px ;
+    $variable: calc( 100% - (#{$column}-1)*30px + 30px ) ;
     width:calc( #{$variable} / #{$column} );
     &:nth-child( #{ $column }n) {
         margin-right: 0;
@@ -83,4 +82,10 @@
         }
       }
     }
+  }
+
+  @mixin childorder($name, $thu, $order) {
+    &__#{$name}:nth-child(#{$thu}) {
+      order: $order;
+  }
   }

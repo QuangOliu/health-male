@@ -37,8 +37,8 @@
         <header class="header">
             <div class="container">
                 <div class="header__wrap">
-                    <div>
-                        <img src="./images/model/Image 1.png" alt="logo" class="logo" />
+                    <div class="header__box-logo">
+                        <img src="./images/model/Image 1.png" alt="logo" class="header__logo" />
                     </div>
                     <nav class="header__menu">
                         <div class="header__top">
@@ -66,6 +66,12 @@
                     <div class="header__bars">
                         <i class="fas fa-bars"></i>
                     </div>
+                    <div class="header__search-mobile">
+                        <input class="header__search" type="text" placeholder="SEARCH" />
+                        <button>
+                            <img src="./images/model/Path 34.png" alt="search" />
+                        </button>
+                    </div>
                 </div>
             </div>
         </header>
@@ -78,17 +84,19 @@
                     src="./images/model/091e1bbe48472dd0fef250e299bb41e3@3x.png"
                     alt=""
                 />
-                <div class="container">
-                    <div class="baner__content">
-                        <h1 class="baner__title">
-                            Plus Paternal: <br />
-                            A focus on fathers
-                        </h1>
-                        <p class="baner__body">
+                <div class="baner__content">
+                    <h1 class="baner__title">
+                        Plus Paternal: <br />
+                        A focus on fathers
+                    </h1>
+                    <div class="baner__body">
+                        <p>
                             We're calling for a fundametal shirt in the way society and the health
                             system view fathers. will you support the Case for Change?
                         </p>
-                        <a href="#" class="button">SEE THE CASE FOR CHANGE</a>
+                    </div>
+                    <div>
+                        <a href="#" class="button button--100">SEE THE CASE FOR CHANGE</a>
                     </div>
                 </div>
                 <div class="baner__order">
@@ -99,12 +107,18 @@
                                     Due to COVID-19, you may be feeling anxious, stressed and
                                     worried.
                                 </h3>
-                                <p>
-                                    if you're strunggling to cope and somone to talk to, there's
-                                    help out there.
-                                </p>
+                                <div>
+                                    <p>
+                                        if you're strunggling to cope and somone to talk to, there's
+                                        help out there.
+                                    </p>
+                                </div>
                             </div>
-                            <a href="#" class="button button--while"> FIND OUT MORE </a>
+                            <div>
+                                <a href="#" class="button button--while button--100">
+                                    FIND OUT MORE
+                                </a>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -116,70 +130,98 @@
                 <div class="container">
                     <div class="health__wrap">
                         <div class="health__story">
-                            <img
-                                src="./images/model/iStock-1227005375_HPMen's HealthTopics.png"
-                                alt=""
-                            />
+                        
+                                <img
+                                    src="./images/model/iStock-1227005375_HPMen's HealthTopics.png"
+                                    alt=""
+                                />
                             <div class="health__contents">
-                                <h3>Men's health topics</h3>
-                                <p class="health__body--desktop">
-                                    make informed decisions baner your health with easy~
-                                    to-understand information on a range of men's health conditions
-                                    conditions.
-                                </p>
-                                <p class="health__body--mobile">
-                                    informed on men's health inssues informed on men's health
-                                    inssues
-                                </p>
-                                <a href="#" class="health__btn button">FIND OUT MOUR</a>
+                                <div class="health__text">
+                                    <h3>Men's health topics</h3>
+                                    <div>
+                                        <p class="health__body__desktop">
+                                            make informed decisions baner your health with easy~
+                                            to-understand information on a range of men's health
+                                            conditions conditions.
+                                        </p>
+                                        <p class="health__body__mobile">
+                                            informed on men's health inssues informed on men's
+                                            health inssues
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="health__btn">
+                                    <a href="#" class="button button--100">FIND OUT MOUR</a>
+                                </div>
                             </div>
                         </div>
                         <div class="health__story">
-                            <img src="./images/model/iStock-1185966868_HPLatest News.png" alt="" />
+                                <img
+                                    src="./images/model/iStock-1185966868_HPLatest News.png"
+                                    alt=""
+                                />
                             <div class="health__contents">
-                                <h3>Latest news</h3>
-                                <p class="health__body--desktop">
-                                    stay informed on men's health inssues with articles for men and
-                                    boys their family and friends, and health professionals
-                                    professionals.
-                                </p>
-                                <p class="health__body--mobile">
-                                    informed on men's health inssues informed on men's health
-                                    inssues
-                                </p>
-                                <a href="#" class="health__btn button">FIND OUT MOUR</a>
+                                <div class="health__text">
+                                    <h3>Latest news</h3>
+                                    <p class="health__body__desktop">
+                                        stay informed on men's health inssues with articles for men
+                                        and boys their family and friends, and health professionals
+                                        professionals.
+                                    </p>
+                                    <p class="health__body__mobile">
+                                        informed on men's health inssues informed on men's health
+                                        inssues
+                                    </p>
+                                </div>
+                                <div class="health__btn">
+                                    <a href="#" class="button button--100">FIND OUT MOUR</a>
+                                </div>
                             </div>
                         </div>
                         <div class="health__story">
-                            <img src="./images/model/iStock-1185966868_HPLatest News.png" alt="" />
+                                <img
+                                    src="./images/model/iStock-1185966868_HPLatest News.png"
+                                    alt=""
+                                />
                             <div class="health__contents">
-                                <h3>Your stoties</h3>
-                                <p class="health__body--desktop">
-                                    real stories from real Aussie men who have lived with, or
-                                    currently live with, a health condition, these stories hope,
-                                    inspire, and change lives.
-                                </p>
-                                <p class="health__body--mobile">
-                                    informed on men's health inssues informed on men's health
-                                    inssues
-                                </p>
-
-                                <a href="#" class="health__btn button">FIND OUT MOUR</a>
+                                <div class="health__text">
+                                    <h3>Your stoties</h3>
+                                    <p class="health__body__desktop">
+                                        real stories from real Aussie men who have lived with, or
+                                        currently live with, a health condition, these stories hope,
+                                        inspire, and change lives.
+                                    </p>
+                                    <p class="health__body__mobile">
+                                        informed on men's health inssues informed on men's health
+                                        inssues
+                                    </p>
+                                </div>
+                                <div class="health__btn">
+                                    <a href="#" class="button button--100">FIND OUT MOUR</a>
+                                </div>
                             </div>
                         </div>
                         <div class="health__story">
-                            <img src="./images/model/18c99d44d8fa53efd11548f7b69d3ec5.png" alt="" />
+                                <img
+                                    src="./images/model/18c99d44d8fa53efd11548f7b69d3ec5.png"
+                                    alt=""
+                                />
                             <div class="health__contents">
-                                <h3>Resource library</h3>
-                                <p class="health__body--desktop">
-                                    Browse through our resource library and download resources baner
-                                    the reproductive and sexual condition that can affrct you.
-                                </p>
-                                <p class="health__body--mobile">
-                                    informed on men's health inssues informed on men's health
-                                    inssues
-                                </p>
-                                <a href="#" class="health__btn button">FIND OUT MOUR</a>
+                                <div class="health__text">
+                                    <h3>Resource library</h3>
+                                    <p class="health__body__desktop">
+                                        Browse through our resource library and download resources
+                                        baner the reproductive and sexual condition that can affrct
+                                        you.
+                                    </p>
+                                    <p class="health__body__mobile">
+                                        informed on men's health inssues informed on men's health
+                                        inssues
+                                    </p>
+                                </div>
+                                <div class="health__btn">
+                                    <a href="#" class="button button--100">FIND OUT MOUR</a>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -238,15 +280,18 @@
                     <div class="train__global">
                         <div class="train__contents">
                             <h2>
-                                <span class="block__tt">Education and trainning for</span>
-                                <span class="block__tt">health professionals</span>
+                                Education and trainning for <br />
+                                health professionals.
                             </h2>
-                            <p class="train__body">
-                                advance your knowledge and skills in male reproductive and sexual
-                                health with our active learning modules (ALMs). Accerdited by
-                                leading heath organisations RACGP, ACRRM and APNA, each ALM offers
-                                high quality,structured and self-directed learning opportunities.
-                            </p>
+                            <div class="train__body">
+                                <p>
+                                    advance your knowledge and skills in male reproductive and
+                                    sexual health with our active learning modules (ALMs).
+                                    Accerdited by leading heath organisations RACGP, ACRRM and APNA,
+                                    each ALM offers high quality,structured and self-directed
+                                    learning opportunities.
+                                </p>
+                            </div>
                             <a href="#" class="button">FIND OUT MOUR</a>
                         </div>
                     </div>
@@ -258,27 +303,7 @@
             <div class="ask">
                 <div class="container">
                     <div class="ask__wrap">
-                        <div href="#" class="ask__mobile">
-                            <a href="#">
-                                <img class="ask__img" src="./images/model/Image 3.png" alt="" />
-                            </a>
-                            <div class="ask__section">
-                                <p class="ask__time">
-                                    31 Oct 2019|
-                                    <img src="./images/model/clock.png" alt="" />
-                                    4 min read
-                                </p>
-                                <div class="ask__content">
-                                    <h4>
-                                        <a class="ask__tt" href="#">
-                                            Debunking the myths on male fertility
-                                        </a>
-                                    </h4>
-                                    <a href="#" class="underline">Read more</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div href="#" class="ask__list">
+                        <div href="#" class="ask__list ask__first">
                             <a href="#">
                                 <img class="ask__img" src="./images/model/pic1.png" alt="" />
                             </a>
@@ -381,7 +406,8 @@
                     <div class="subsc__wrap">
                         <div class="subsc__content">
                             <h2>
-                                <span class="block__tt">Subscribe to the</span> monthly newsletter
+                                Subscribe to the <br />
+                                monthly newsletter
                             </h2>
                             <p>
                                 each month we release two email newsletter - one written for men,
@@ -392,15 +418,14 @@
                             <div class="form__left">
                                 <div class="form__iterm">
                                     <label for="Email address" class="form__ob">
-                                        Email address
-                                    </label>
+                                        Email address</label>
                                     <br />
                                     <input type="text" name="Email address" class="form__nomal" />
                                     <br />
                                 </div>
 
                                 <div class="form__iterm">
-                                    <label for="name" class="form__ob">Name </label>
+                                    <label for="name" class="form__ob">Name</label>
                                     <br />
                                     <input type="text" name="name" class="form__nomal" />
                                     <br />
@@ -438,22 +463,22 @@
                                     <p class="form__ob">
                                         Which newsletter/s would you like to subscribe to?
                                     </p>
-                                    <div>
+                                    <div class="form__op">
                                         <input
                                             type="checkbox"
                                             name="option"
                                             class="form__checkbox"
                                         />
-                                        <label for="option"> for men, family and friends </label>
+                                        <label for="option"> For men, family and friends </label>
                                     </div>
-                                    <div>
+                                    <div    class="form__op">
                                         <input
                                             type="checkbox"
                                             name="option"
                                             class="form__checkbox"
                                         />
                                         <label for="option">
-                                            for healthy professionals and organisations
+                                            For healthy professionals and organisations
                                         </label>
                                     </div>
                                 </div>

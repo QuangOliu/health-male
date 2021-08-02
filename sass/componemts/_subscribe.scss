@@ -1,13 +1,31 @@
 .subsc {
     padding: 70px 0;
     background-color: $blue--white;
+    h2 {
+        color: $green;
+        margin-bottom: 20px;
+    }
+    p {
+        color: $green;
+    }
     &__wrap {
         text-align: center;
     }
     &__content {
-        margin: 0 25%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
         padding:0 0 30px;
         color: $green;
+    }
+    @media screen and (max-width:768px) {
+        & {
+            padding: 50px 0;
+        }
+
+        &__content {
+            justify-content: start;
+        }
     }
 }
 
@@ -16,11 +34,15 @@
     display: flex;
     text-align: start;
     justify-content: center;
+    label {
+        color: $green;
+    }
 
     &__ob:after {
         content: '*';
+        font-size: 24px;
         color: red;
-        margin-left: -2px;
+        margin-left: 0px;
 
     }
 
@@ -38,11 +60,21 @@
         margin: 20px 0;
     }
 
+    &__op {
+        margin-bottom: 10px;
+        display: flex;
+        align-items: center;
+        label {
+            line-height: 1;
+        }
+    }
+    
     &__checkbox {
-        width: 20px;
-        height: 20px;
+        border: none;
+        width: 25px;
+        height: 25px;
         line-height: 0;
-        margin: 0;
+        margin: 0 10px 0 0;
     }
 
     &__right {
@@ -59,20 +91,21 @@
 
     &__nomal {
         margin-top: 4px;
+        margin-right: 10px;
     }
 
     @media screen and (max-width:768px) {
 
-        &{
+        & {
             display: block;
         }
         
-        &__desktop {
-            display: none;
-        }
+        // &__desktop {
+        //     display: none;
+        // }
 
         &__left {
-            
+            margin: 0;
         }
         &__right {
             margin: 0;

@@ -1,11 +1,11 @@
 input, select {
   border: none;
   height: 40px;
-  padding-left: 15px;
+  padding:5px 15px;
 }
 
 input.header__search {
-    width: 260px;
+    width: 277px;
 }
 
 input.form__nomal, select {
@@ -15,14 +15,20 @@ input.form__nomal, select {
     }
 }
 
+input[type = text] {
+    box-sizing: border-box;
+    color: $green;
+}
+
 input[type="number"] {
-    margin-right: 8px;
     width: 100px;
     height: 40px;
-    @media screen and (max-width:768px) {
-        width: 46%;
-        margin-right: 0;
-    }
+    flex: 1;
+    margin-right: 0;
+    max-width: 25%;
+//     @media screen and  (max-width:768px) {
+//         width: 33%;
+//     }
 }
 
 

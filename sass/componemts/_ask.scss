@@ -1,6 +1,6 @@
 .ask {
     padding: 70px 0;
-
+    // background-color: red;
     &__wrap {
         display: flex;
         justify-content: space-between;
@@ -46,6 +46,14 @@
         }
         &__list {
             display: none;
+        }
+        &__first {
+            display: block;
+            width: 100%;
+            margin-right: 0;
+        }
+        &__content {
+            font-weight: 700;
         }
     }
 }

@@ -1,7 +1,7 @@
 .container {
     margin: 0 auto;
     max-width: $container-width;
-    padding:0 20px;
+    padding: 0 20px;
 }
 
 .logo {
@@ -14,7 +14,7 @@
     text-align: center;
     position: relative;
     &::after {
-        content: '';
+        content: "";
         display: block;
         width: 100%;
         border: 1px solid $orig-bgr;

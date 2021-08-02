@@ -20,21 +20,20 @@
 	}
 
 	&__order {
-		padding: 0 8px;
 		h3,
 		p {
 			text-transform: none;
 			color: $white;
 		}
 		background-color: $orig-bgr;
-		width: 100%;
-		transform: translateY(-100%);
 		position: absolute;
-		top: 100%;
+		bottom: 0;
+		right: 0;
+		left: 0;
 	}
 
 	&__flex {
-		padding: 29px 0 16px;
+		padding: 29px 0;
 		display: flex;
 		justify-content: space-between;
 		align-items: center;
@@ -42,7 +41,23 @@
 
 	@media screen and (max-width:768px) {
 		&__content {
-			left: 20px;
+			margin-top: -7px;
+			max-width: none;
+			width: 100%;
+			padding: 20px 20px;
+			background-color: #aee0e3;
+			position: relative;
+			left: 0;
+			transform: none;
+			h1,p {
+				color: $green-hover;
+			}
+		}
+		&__order {
+			position: relative;
+			div {
+				display: block;
+			}
 		}
 	}
 }
